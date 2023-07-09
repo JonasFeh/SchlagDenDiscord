@@ -3,10 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SchlagDenDiscord.MVVM.ScoreBoard"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                Grid.RowSpan="2"
+            CornerRadius="20"
+            BorderThickness="4">
             
+            <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#f4f5f6" Offset="0.0" />
+                    <GradientStop Color="#7d7f7e" Offset="0.15" />
+                    <GradientStop Color="#3f3b3c" Offset="1.0" />
+            </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#fc9d04" Offset="0.0" />
+                    <GradientStop Color="#e1d03a" Offset="0.5" />
+                    <GradientStop Color="#fc9d04" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
     </Grid>
 </UserControl>

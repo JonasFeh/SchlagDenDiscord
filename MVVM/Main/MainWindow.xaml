@@ -116,7 +116,7 @@
                 Style="{StaticResource MenuButtonTheme}" />
 
             <ContentControl
-                Grid.Row="2"
+                Grid.Row="1"
                 Grid.RowSpan="{Binding RelativeSource={RelativeSource AncestorType=Grid}, Path=RowDefinitions.Count, Mode=OneWay}"
                 Grid.Column="1"
                 Margin="10"
