@@ -28,3 +28,5 @@ C:\Users\jonas\source\repos\SchlagDenDiscord\obj\x64\Debug\net6.0-windows\Schlag
 C:\Users\jonas\source\repos\SchlagDenDiscord\obj\x64\Debug\net6.0-windows\SchlagDenDiscord.genruntimeconfig.cache
 C:\Users\jonas\source\repos\SchlagDenDiscord\obj\x64\Debug\net6.0-windows\ref\SchlagDenDiscord.dll
 C:\Users\jonas\source\repos\SchlagDenDiscord\obj\x64\Debug\net6.0-windows\App.baml
+C:\Users\jonas\source\repos\SchlagDenDiscord\obj\x64\Debug\net6.0-windows\MVVM\ScoreBoard\ScoreBoardView.g.cs
+C:\Users\jonas\source\repos\SchlagDenDiscord\obj\x64\Debug\net6.0-windows\MVVM\ScoreBoard\ScoreBoardView.baml

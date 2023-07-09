@@ -1,6 +1,7 @@
-﻿using App.Core;
+﻿
+using SchlagDenDiscord.Core;
 
-namespace App.MVVM.Main
+namespace SchlagDenDiscord.MVVM.Main
 {
     internal class MainModel : ModelBase
     {

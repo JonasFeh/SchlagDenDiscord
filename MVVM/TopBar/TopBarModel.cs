@@ -1,8 +1,8 @@
-﻿using App.Core;
-using App.Shutdown;
+﻿using App.Shutdown;
+using SchlagDenDiscord.Core;
 using System.Windows;
 
-namespace App.MVVM.TopBar
+namespace SchlagDenDiscord.MVVM.TopBar
 {
     internal class TopBarModel : ModelBase
     {

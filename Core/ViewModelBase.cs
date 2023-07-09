@@ -1,9 +1,8 @@
-﻿using App.Core;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace FinanceOverviewApp.Core
+namespace SchlagDenDiscord.Core.Core
 {
     public class ViewModelBase<TModel> : ViewModelBase, INotifyPropertyChanged where TModel : ModelBase, new()
     {

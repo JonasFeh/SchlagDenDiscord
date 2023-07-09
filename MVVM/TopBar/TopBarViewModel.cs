@@ -1,6 +1,6 @@
-﻿using FinanceOverviewApp.Core;
+﻿using SchlagDenDiscord.Core.Core;
 
-namespace App.MVVM.TopBar
+namespace SchlagDenDiscord.MVVM.TopBar
 {
 
     internal class TopBarViewModel : ViewModelBase<TopBarModel>
@@ -24,6 +24,5 @@ namespace App.MVVM.TopBar
                 Model.InitiateShutDown();
             });
         }
-
     }
 }

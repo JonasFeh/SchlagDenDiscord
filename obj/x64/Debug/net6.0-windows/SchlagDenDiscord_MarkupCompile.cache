@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\jonas\source\repos\SchlagDenDiscord\App.xaml
-345449840
+4-1920439736
 
-14-2036337525
+171412755292
 198-1175125987
-MVVM\Main\MainWindow.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
+MVVM\Main\MainWindow.xaml;MVVM\ScoreBoard\ScoreBoardView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
 False
 

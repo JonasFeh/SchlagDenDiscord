@@ -1,4 +1,4 @@
-﻿using App.Core;
+﻿using SchlagDenDiscord.Core.Core;
 using System;
 using System.Collections.Generic;
 

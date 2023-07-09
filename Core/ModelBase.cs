@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace App.Core
+namespace SchlagDenDiscord.Core
 {
     public class ModelBase : INotifyPropertyChanged
     {

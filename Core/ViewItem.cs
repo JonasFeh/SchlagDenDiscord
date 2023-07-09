@@ -1,8 +1,7 @@
-﻿using FinanceOverviewApp.Core;
-using System;
+﻿using System;
 using System.Windows.Controls;
 
-namespace App.Core
+namespace SchlagDenDiscord.Core.Core
 {
     public abstract class ViewItem<TViewModel, TModel> : ViewItem
         where TViewModel : ViewModelBase<TModel>, new()

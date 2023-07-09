@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace FinanceOverviewApp.Core
+namespace SchlagDenDiscord.Core.Core
 {
     class RelayCommand : ICommand
     {

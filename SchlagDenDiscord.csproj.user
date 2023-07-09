@@ -7,7 +7,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="MVVM\ScoreBoard\ScoreBoardView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MVVM\Main\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\ScoreBoard\ScoreBoardView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Theme\MenuButtonTheme.xaml">

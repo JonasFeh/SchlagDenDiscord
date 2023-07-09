@@ -1,13 +1,14 @@
-﻿using App.MVVM.TopBar;
-using App.Registries;
-using FinanceOverviewApp.Core;
-using System;
+﻿using SchlagDenDiscord.Core.Core;
+using SchlagDenDiscord.MVVM.ScoreBoard;
+using SchlagDenDiscord.MVVM.TopBar;
 
-namespace App.MVVM.Main
+namespace SchlagDenDiscord.MVVM.Main
 {
     class MainViewModel : ViewModelBase<MainModel>
     {
-        public TopBarViewModel TopBarVM { get; set; }
+        public TopBarViewModel TopBarViewModel { get; set; }
+
+        private ScoreBoardViewModel ScoreBoardViewModel { get; set; }
 
 
         private ViewModelBase m_CurrenView;
@@ -24,7 +25,9 @@ namespace App.MVVM.Main
 
         public MainViewModel()
         {
-            TopBarVM = new TopBarViewModel();
+            TopBarViewModel = new TopBarViewModel();
+            ScoreBoardViewModel = new ScoreBoardViewModel();
+            m_CurrenView = ScoreBoardViewModel;
         }
     }
 }
