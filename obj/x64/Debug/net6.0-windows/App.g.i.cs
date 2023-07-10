@@ -59,7 +59,7 @@ namespace SchlagDenDiscord {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/SchlagDenDiscord;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/App;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

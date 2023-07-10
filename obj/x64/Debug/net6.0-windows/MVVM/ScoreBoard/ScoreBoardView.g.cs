@@ -52,7 +52,7 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SchlagDenDiscord;component/mvvm/scoreboard/scoreboardview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/App;component/mvvm/scoreboard/scoreboardview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\MVVM\ScoreBoard\ScoreBoardView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

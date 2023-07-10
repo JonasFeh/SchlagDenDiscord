@@ -119,9 +119,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jonas\\source\\repos\\SchlagDenDiscord\\SchlagDenDiscord.csproj",
-      "projectName": "SchlagDenDiscord",
-      "projectPath": "C:\\Users\\jonas\\source\\repos\\SchlagDenDiscord\\SchlagDenDiscord.csproj",
+      "projectUniqueName": "C:\\Users\\jonas\\source\\repos\\SchlagDenDiscord\\App.csproj",
+      "projectName": "App",
+      "projectPath": "C:\\Users\\jonas\\source\\repos\\SchlagDenDiscord\\App.csproj",
       "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jonas\\source\\repos\\SchlagDenDiscord\\obj\\",
       "projectStyle": "PackageReference",
