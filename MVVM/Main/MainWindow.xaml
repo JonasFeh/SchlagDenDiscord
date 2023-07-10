@@ -52,7 +52,7 @@
                 Height="30"
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
-                DataContext="{Binding TopBarVM}"
+                DataContext="{Binding TopBarViewModel}"
                 Orientation="Horizontal">
 
                 <Button

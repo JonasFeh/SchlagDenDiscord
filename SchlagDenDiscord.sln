@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchlagDenDiscord", "SchlagDenDiscord.csproj", "{15A98187-944E-4713-996D-34565EBA9969}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App", "App.csproj", "{15A98187-944E-4713-996D-34565EBA9969}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games", "..\Games\Games.csproj", "{21FA257E-1F67-412D-AA62-303FDE134DE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games", "..\Games\Games.csproj", "{21FA257E-1F67-412D-AA62-303FDE134DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "..\Data\Data.csproj", "{D6A157D9-355A-4544-AD46-1E18764D859C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{21FA257E-1F67-412D-AA62-303FDE134DE6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{21FA257E-1F67-412D-AA62-303FDE134DE6}.Release|x64.ActiveCfg = Release|Any CPU
 		{21FA257E-1F67-412D-AA62-303FDE134DE6}.Release|x64.Build.0 = Release|Any CPU
+		{D6A157D9-355A-4544-AD46-1E18764D859C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A157D9-355A-4544-AD46-1E18764D859C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A157D9-355A-4544-AD46-1E18764D859C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D6A157D9-355A-4544-AD46-1E18764D859C}.Debug|x64.Build.0 = Debug|Any CPU
+		{D6A157D9-355A-4544-AD46-1E18764D859C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A157D9-355A-4544-AD46-1E18764D859C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A157D9-355A-4544-AD46-1E18764D859C}.Release|x64.ActiveCfg = Release|Any CPU
+		{D6A157D9-355A-4544-AD46-1E18764D859C}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

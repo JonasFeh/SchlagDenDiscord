@@ -8,7 +8,7 @@ namespace SchlagDenDiscord.MVVM.Main
     {
         public TopBarViewModel TopBarViewModel { get; set; }
 
-        private ScoreBoardViewModel ScoreBoardViewModel { get; set; }
+        public ScoreBoardViewModel ScoreBoardViewModel { get; set; }
 
 
         private ViewModelBase m_CurrentView;
@@ -28,7 +28,7 @@ namespace SchlagDenDiscord.MVVM.Main
             TopBarViewModel = new TopBarViewModel();
             ScoreBoardViewModel = new ScoreBoardViewModel();
 
-            CurrentView = ScoreBoardViewModel;
+            m_CurrentView = ScoreBoardViewModel;
         }
     }
 }
