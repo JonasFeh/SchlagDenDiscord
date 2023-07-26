@@ -3,11 +3,10 @@
     [Serializable]
     public class Team
     {
-        string Name { get; set; }
-        IList<string> Members { get; set; }
+        public string Name { get; set; }
+        public  IList<string> Members { get; set; }
 
-        int PlayerCount => Members.Count();
-
+        public int PlayerCount => Members.Count();
 
         public Team()
         {

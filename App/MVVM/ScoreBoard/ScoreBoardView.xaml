@@ -6,29 +6,44 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
+        <Grid.Resources>
+            <Style TargetType="Label" x:Key="BaseStyle">
+                <Setter Property="Width" Value="32" />
+                <Setter Property="Height" Value="32" />
+                <Setter Property="Margin" Value="10,0,10,0" />
+                <Setter Property="Background" Value="Black" />
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+            <Style TargetType="Label" BasedOn="{StaticResource BaseStyle}" />
+            
+        </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Border
                 Grid.Row="0"
-                Grid.ColumnSpan="2"
-                Grid.RowSpan="2"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="5"
             CornerRadius="20"
             BorderThickness="4">
-            
+
             <Border.BorderBrush>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="#f4f5f6" Offset="0.0" />
                     <GradientStop Color="#7d7f7e" Offset="0.15" />
                     <GradientStop Color="#3f3b3c" Offset="1.0" />
-            </LinearGradientBrush>
+                </LinearGradientBrush>
             </Border.BorderBrush>
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
@@ -38,5 +53,75 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
+        
+        <!--Top Bar-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,20,10,20" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" >
+            <!--1-->
+            <Label />
+            <!--2-->
+            <Label />
+            <!--3-->
+            <Label />
+            <!--4-->
+            <Label />
+            <!--5-->
+            <Label />
+            <!--6-->
+            <Label />
+            <!--7-->
+            <Label />
+            <!--8-->
+            <Label />
+            <!--9-->
+            <Label />
+            <!--10-->
+            <Label />
+            <!--11-->
+            <Label />
+            <!--12-->
+            <Label />
+            <!--13-->
+            <Label />
+            <!--14-->
+            <Label />
+            <!--15-->
+            <Label />
+        </StackPanel>
+
+        <!--Team 1-->
+        <TextBox Grid.Row="1" Background="Transparent" Foreground="Black" Margin="20,20,20,5" FontSize="22" Text="{Binding Team1.Name}" />
+        <TextBox Grid.Row="2" Background="Black" Foreground="White" Margin="20,10,20,5" FontSize="80" Text="{Binding Team2.Points}" />
+        <ProgressBar Grid.Row="3" Grid.Column="0" Background="Black" Foreground="#e70103" Height="20" Margin="20,5,20,5" />
+
+        <Grid Grid.Row="4" Grid.Column="0" Margin="15,0,15,0" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Margin="0,0,0,0"/>
+            <Label Grid.Row="0" Grid.Column="1" Margin="0,0,0,0"/>
+            <Label Grid.Row="0" Grid.Column="2" Margin="0,0,0,0"/>
+            <Label Grid.Row="0" Grid.Column="3" Margin="0,0,0,0"/>
+            <Label Grid.Row="0" Grid.Column="4" Margin="0,0,0,0"/>
+            <Label Grid.Row="1" Grid.Column="0" Margin="0,0,0,0"/>
+            <Label Grid.Row="1" Grid.Column="1" Margin="0,0,0,0"/>
+            <Label Grid.Row="1" Grid.Column="2" Margin="0,0,0,0"/>
+            <Label Grid.Row="1" Grid.Column="3" Margin="0,0,0,0"/>
+            <Label Grid.Row="1" Grid.Column="4" Margin="0,0,0,0"/>
+            <Label Grid.Row="2" Grid.Column="0" Margin="0,0,0,0"/>
+            <Label Grid.Row="2" Grid.Column="1" Margin="0,0,0,0"/>
+            <Label Grid.Row="2" Grid.Column="2" Margin="0,0,0,0"/>
+            <Label Grid.Row="2" Grid.Column="3" Margin="0,0,0,0"/>
+            <Label Grid.Row="2" Grid.Column="4" Margin="0,0,0,0"/>
+        </Grid>
+        
     </Grid>
 </UserControl>

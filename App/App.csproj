@@ -12,4 +12,9 @@
     <PackageReference Include="FontAwesome6.Svg" Version="2.5.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj" />
+    <ProjectReference Include="..\Games\Games.csproj" />
+  </ItemGroup>
+
 </Project>
