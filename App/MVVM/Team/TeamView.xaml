@@ -32,16 +32,16 @@
         </Grid.RowDefinitions>
 
         <!--Name-->
-        <TextBox Grid.Row="0" Background="Transparent" Margin="0,20,0,0" FontSize="22" Text="{Binding Team.Name}" />
+        <!--<TextBox Grid.Row="0" Background="Transparent" Margin="0,20,0,0" FontSize="22" Text="{Binding Team.Name}" />-->
 
         <!--Members-->
-        <ListView Grid.Row="1" Background="Black" Margin="10" ItemsSource="{Binding Team.Members}">
+        <!--<ListView Grid.Row="1" Background="Black" Margin="10" ItemsSource="{Binding Team.Members}">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="Focusable" Value="false"/>
                 </Style>
             </ListView.ItemContainerStyle>
-        </ListView>
+        </ListView>-->
 
     </Grid>
 
