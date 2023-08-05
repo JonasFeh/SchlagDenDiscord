@@ -2,9 +2,12 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:fa6="http://schemas.fontawesome.com/icons/svg"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:fa6="http://schemas.fontawesome.com/icons/svg" xmlns:scoreboard="clr-namespace:SchlagDenDiscord.MVVM.ScoreBoard"
              mc:Ignorable="d" 
              d:DesignHeight="1020" d:DesignWidth="1500">
+    <UserControl.DataContext>
+        <scoreboard:ScoreBoardViewModel />
+    </UserControl.DataContext>
     <Grid>
         <Grid.Resources>
             <Style TargetType="Label" x:Key="TopButtonBaseStyle">
@@ -50,9 +53,9 @@
         </Grid.RowDefinitions>
 
         <Border
-                Grid.Row="0"
-                Grid.ColumnSpan="3"
-                Grid.RowSpan="6"
+            Grid.Row="0"
+            Grid.ColumnSpan="3"
+            Grid.RowSpan="6"
             CornerRadius="20"
             BorderThickness="4">
 
@@ -110,9 +113,9 @@
         </Grid>
 
         <!--Team 1-->
-        <TextBox Grid.Row="1" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" Foreground="Black" Margin="20,50,20,5" FontSize="75" FontFamily="Impact" Text="{Binding Team1.Name}" />
+        <TextBox Grid.Row="1" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" Foreground="Black" Margin="20,0,20,5" FontSize="75" FontFamily="Impact" Text="{Binding Team1.Name}" />
         <TextBox Grid.Row="2" HorizontalContentAlignment="Right" Background="Black" Foreground="White" Margin="40,10,40,5" FontSize="200" FontFamily="Impact" Text="{Binding Team1.Score}" />
-        <ProgressBar Grid.Row="3" Grid.Column="0" Background="Black" Foreground="#e70103" Height="40" Margin="40,30,40,5" />
+        <ProgressBar Grid.Row="3" Grid.Column="0" Background="Black" Foreground="#e70103" Height="40" Margin="40,30,40,5" Minimum="{Binding MinimumPoints}" Maximum="{Binding Team1Points2Win}" Value="{Binding Team1.Score}"/>
 
         <Grid Grid.Row="4" Grid.Column="0" Margin="20,50,20,20" HorizontalAlignment="Stretch">
             <Grid.ColumnDefinitions>
@@ -149,7 +152,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" >
+            <Button Grid.Row="0" Grid.Column="0" Command="{Binding Team1Joker2x}">
                 <Button.Content>
                     <fa6:SvgAwesome
                             Width="30"
@@ -158,7 +161,7 @@
                             PrimaryColor="White" />
                 </Button.Content>
             </Button>
-            <Button Grid.Row="0" Grid.Column="1" >
+            <Button Grid.Row="0" Grid.Column="1" Command="{Binding Team1JokerFuckOff}">
                 <Button.Content>
                     <fa6:SvgAwesome
                             Width="30"
@@ -167,7 +170,145 @@
                             PrimaryColor="White" />
                 </Button.Content>
             </Button>
-            <Button Grid.Row="0" Grid.Column="2">
+            <Button Grid.Row="0" Grid.Column="2" Command="{Binding Team1JokerReRoll}">
+                <Button.Content>
+                    <fa6:SvgAwesome
+                            Width="30"
+                            Height="20"
+                            Icon="Solid_Dice"
+                            PrimaryColor="White" />
+                </Button.Content>
+            </Button>
+        </Grid>
+
+        <!--Team 2-->
+        <TextBox Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" Foreground="Black" Margin="20,0,20,5" FontSize="75" FontFamily="Impact" Text="{Binding Team2.Name}" />
+        <TextBox Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Right" Background="Black" Foreground="White" Margin="40,10,40,5" FontSize="200" FontFamily="Impact" Text="{Binding Team2.Score}" />
+        <ProgressBar Grid.Row="3" Grid.Column="1" Background="Black" Foreground="#e70103" Height="40" Margin="40,30,40,5" Minimum="{Binding MinimumPoints}" Maximum="{Binding Team2Points2Win}" Value="{Binding Team2.Score}"/>
+
+        <Grid Grid.Row="4" Grid.Column="1" Margin="20,50,20,20" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Content="1" Command="{Binding Team2Scored1}"/>
+            <Button Grid.Row="0" Grid.Column="1" Content="2" Command="{Binding Team2Scored2}"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="3" Command="{Binding Team2Scored3}" />
+            <Button Grid.Row="0" Grid.Column="3" Content="4" Command="{Binding Team2Scored4}" />
+            <Button Grid.Row="0" Grid.Column="4" Content="5" Command="{Binding Team2Scored5}" />
+            <Button Grid.Row="1" Grid.Column="0" Content="6" Command="{Binding Team2Scored6}" />
+            <Button Grid.Row="1" Grid.Column="1" Content="7" Command="{Binding Team2Scored7}" />
+            <Button Grid.Row="1" Grid.Column="2" Content="8" Command="{Binding Team2Scored8}" />
+            <Button Grid.Row="1" Grid.Column="3" Content="9" Command="{Binding Team2Scored9}" />
+            <Button Grid.Row="1" Grid.Column="4" Content="10" Command="{Binding Team2Scored10}" />
+            <Button Grid.Row="2" Grid.Column="0" Content="11" Command="{Binding Team2Scored11}" />
+            <Button Grid.Row="2" Grid.Column="1" Content="12" Command="{Binding Team2Scored12}" />
+            <Button Grid.Row="2" Grid.Column="2" Content="13" Command="{Binding Team2Scored13}" />
+            <Button Grid.Row="2" Grid.Column="3" Content="14" Command="{Binding Team2Scored14}" />
+            <Button Grid.Row="2" Grid.Column="4" Content="15" Command="{Binding Team2Scored15}" />
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="1" Margin="20,0,20,20" HorizontalAlignment="Stretch" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Command="{Binding Team2Joker2x}">
+                <Button.Content>
+                    <fa6:SvgAwesome
+                            Width="30"
+                            Height="20"
+                            Icon="Solid_Clone"
+                            PrimaryColor="White" />
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="1" Command="{Binding Team2JokerFuckOff}">
+                <Button.Content>
+                    <fa6:SvgAwesome
+                            Width="30"
+                            Height="20"
+                            Icon="Solid_HandMiddleFinger"
+                            PrimaryColor="White" />
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Command="{Binding Team2JokerReRoll}">
+                <Button.Content>
+                    <fa6:SvgAwesome
+                            Width="30"
+                            Height="20"
+                            Icon="Solid_Dice"
+                            PrimaryColor="White" />
+                </Button.Content>
+            </Button>
+        </Grid>
+
+        <!--Team 3-->
+        <TextBox Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Center" Background="Transparent" BorderBrush="Transparent" Foreground="Black" Margin="20,0,20,5" FontSize="75" FontFamily="Impact" Text="{Binding Team3.Name}" />
+        <TextBox Grid.Row="2" Grid.Column="2" HorizontalContentAlignment="Right" Background="Black" Foreground="White" Margin="40,10,40,5" FontSize="200" FontFamily="Impact" Text="{Binding Team3.Score}" />
+        <ProgressBar Grid.Row="3" Grid.Column="2" Background="Black" Foreground="#e70103" Height="40" Margin="40,30,40,5" Minimum="{Binding MinimumPoints}" Maximum="{Binding Team3Points2Win}" Value="{Binding Team3.Score}"/>
+
+        <Grid Grid.Row="4" Grid.Column="2" Margin="20,50,20,20" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Content="1" Command="{Binding Team3Scored1}"/>
+            <Button Grid.Row="0" Grid.Column="1" Content="2" Command="{Binding Team3Scored2}"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="3" Command="{Binding Team3Scored3}" />
+            <Button Grid.Row="0" Grid.Column="3" Content="4" Command="{Binding Team3Scored4}" />
+            <Button Grid.Row="0" Grid.Column="4" Content="5" Command="{Binding Team3Scored5}" />
+            <Button Grid.Row="1" Grid.Column="0" Content="6" Command="{Binding Team3Scored6}" />
+            <Button Grid.Row="1" Grid.Column="1" Content="7" Command="{Binding Team3Scored7}" />
+            <Button Grid.Row="1" Grid.Column="2" Content="8" Command="{Binding Team3Scored8}" />
+            <Button Grid.Row="1" Grid.Column="3" Content="9" Command="{Binding Team3Scored9}" />
+            <Button Grid.Row="1" Grid.Column="4" Content="10" Command="{Binding Team3Scored10}" />
+            <Button Grid.Row="2" Grid.Column="0" Content="11" Command="{Binding Team3Scored11}" />
+            <Button Grid.Row="2" Grid.Column="1" Content="12" Command="{Binding Team3Scored12}" />
+            <Button Grid.Row="2" Grid.Column="2" Content="13" Command="{Binding Team3Scored13}" />
+            <Button Grid.Row="2" Grid.Column="3" Content="14" Command="{Binding Team3Scored14}" />
+            <Button Grid.Row="2" Grid.Column="4" Content="15" Command="{Binding Team3Scored15}" />
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="2" Margin="20,0,20,20" HorizontalAlignment="Stretch" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Command="{Binding Team3Joker2x}">
+                <Button.Content>
+                    <fa6:SvgAwesome
+                            Width="30"
+                            Height="20"
+                            Icon="Solid_Clone"
+                            PrimaryColor="White" />
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="1" Command="{Binding Team3JokerFuckOff}">
+                <Button.Content>
+                    <fa6:SvgAwesome
+                            Width="30"
+                            Height="20"
+                            Icon="Solid_HandMiddleFinger"
+                            PrimaryColor="White" />
+                </Button.Content>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Command="{Binding Team3JokerReRoll}">
                 <Button.Content>
                     <fa6:SvgAwesome
                             Width="30"
