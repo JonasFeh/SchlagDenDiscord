@@ -19,7 +19,7 @@ namespace Games
 
     public class Markenlogos : GameBase
     {
-        public Markenlogos( int theGameNumber, string theName ) : base( theGameNumber, theName )
+        public Markenlogos( int theGameNumber, string theName ) : base( theGameNumber, theName, GameType.PictureAndAnswer )
         {
             Logos = new List<MarkenlogoEntry>
             {
@@ -95,7 +95,7 @@ namespace Games
                 new MarkenlogoEntry("Wasa", Path.Combine(RessourceFolder, "wasa.png"), 5),
                 new MarkenlogoEntry("Wuerth", Path.Combine(RessourceFolder, "wuerth.png"), 2),
             };
-            Logos = Shuffle<MarkenlogoEntry>( Logos );
+            Logos = Shuffle<MarkenlogoEntry>(Logos);
         }
 
         List<MarkenlogoEntry> Logos { get; set; }
