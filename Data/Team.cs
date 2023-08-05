@@ -9,9 +9,9 @@
 
         public int Score { get; set; }
 
-        public Team()
+        public Team( int Number )
         {
-            Name = string.Empty;
+            Name = "Team" + Number;
             JokerMap = new Dictionary<Common.Joker, bool>
             {
                 { Common.Joker.Double, true},

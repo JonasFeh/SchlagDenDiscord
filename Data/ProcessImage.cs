@@ -31,8 +31,8 @@
             throw new ArgumentOutOfRangeException();
         }
 
-        public Team Team1 { get; set; } = new Team();
-        public Team Team2 { get; set; } = new Team();
-        public Team Team3 { get; set; } = new Team();
+        public Team Team1 { get; set; } = new Team( 1 );
+        public Team Team2 { get; set; } = new Team( 2 );
+        public Team Team3 { get; set; } = new Team( 3 );
     }
 }
