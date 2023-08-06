@@ -36,19 +36,18 @@ namespace SchlagDenDiscord.Core.Core
             OnPropertyChanged(e.PropertyName);
         }
 
+    }
+
+    public abstract class ViewModelBase
+    {
         public virtual void OnStartup()
         {
-            
+
         }
 
         public virtual void OnShutdown()
         {
 
         }
-    }
-
-    public class ViewModelBase
-    {
-        
     }
 }

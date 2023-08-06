@@ -12,17 +12,6 @@ namespace SchlagDenDiscord.Core.Core
 
         public override TViewModel ViewModel => new TViewModel();
 
-        public override void OnStartup()
-        {
-            Model.OnStartup();
-            ViewModel.OnStartup();
-        }
-
-        public override void OnShutdown()
-        {
-            Model.OnShutdown();
-            ViewModel.OnShutdown();
-        }
     }
 
     public abstract class ViewItem
@@ -36,7 +25,16 @@ namespace SchlagDenDiscord.Core.Core
         public abstract UserControl View { get; }
 
 
-        public abstract void OnStartup();
-        public abstract void OnShutdown();
+        public virtual void OnStartup()
+        {
+            Model.OnStartup();
+            ViewModel.OnStartup();
+        }
+
+        public virtual void OnShutdown()
+        {
+            Model.OnShutdown();
+            ViewModel.OnShutdown();
+        }
     }
 }

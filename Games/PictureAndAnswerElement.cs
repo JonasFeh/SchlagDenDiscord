@@ -4,13 +4,13 @@
     {
         public PictureAndAnswerElement( string theName, string theImagePath, int theDifficulty )
         {
-            Name = theName;
-            LogoPath = theImagePath;
+            Answer = theName;
+            Image = theImagePath;
             Difficulty = theDifficulty;
         }
 
-        public string LogoPath { get; set; }
-        public string Name { get; set; }
+        public string Image { get; set; }
+        public string Answer { get; set; }
 
         public int Difficulty { get; set; }
     }

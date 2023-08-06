@@ -1,7 +1,7 @@
 ﻿
 namespace Games
 {
-    internal class MarkenlogosGame : PictureAndAnswerBase
+    public class MarkenlogosGame : PictureAndAnswerBase
     {
         public MarkenlogosGame( int theGameNumber, string theName ) : base( theGameNumber, theName )
         {

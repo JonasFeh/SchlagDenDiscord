@@ -2,7 +2,7 @@
 
 namespace Games
 {
-    internal abstract class PictureAndAnswerBase : GameBase
+    public abstract class PictureAndAnswerBase : GameBase
     {
         public PictureAndAnswerBase( int theGameNumber, string theName ) : base( theGameNumber, theName, GameType.PictureAndAnswer )
         {

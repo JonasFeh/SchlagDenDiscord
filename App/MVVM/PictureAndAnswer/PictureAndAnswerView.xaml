@@ -7,6 +7,61 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.DataContext>
+            <local:PictureAndAnswerViewModel />
+        </Grid.DataContext>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" MinHeight="100"/>
+        </Grid.RowDefinitions>
+
+        <Border
+            Grid.Row="0"
+            CornerRadius="20"
+            BorderThickness="4">
+
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#f4f5f6" Offset="0.0" />
+                    <GradientStop Color="#7d7f7e" Offset="0.15" />
+                    <GradientStop Color="#3f3b3c" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#fc9d04" Offset="0.0" />
+                    <GradientStop Color="#e1d03a" Offset="0.5" />
+                    <GradientStop Color="#fc9d04" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Label Grid.Row="0" Content="{Binding Header}" />
+
+        <Image Grid.Row="1" Source="{Binding CurrentElement.Image}" />
+
+        <Border
+            Grid.Row="2"
+            CornerRadius="20"
+            BorderThickness="4">
+
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#f4f5f6" Offset="0.0" />
+                    <GradientStop Color="#7d7f7e" Offset="0.15" />
+                    <GradientStop Color="#3f3b3c" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#fc9d04" Offset="0.0" />
+                    <GradientStop Color="#e1d03a" Offset="0.5" />
+                    <GradientStop Color="#fc9d04" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+        <Label Grid.Row="2" Content="{Binding CurrentElement.Answer}" />
     </Grid>
 </UserControl>

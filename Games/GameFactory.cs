@@ -20,7 +20,7 @@
 
         private Dictionary<Game, GameBase> GameRegistry = new Dictionary<Game, GameBase>
         {
-            { Game.Markenlogo, new Markenlogos(1, "Markenlogos") },
+            { Game.Markenlogo, new MarkenlogosGame(1, "Markenlogos") },
         };
 
         public GameBase GetGame( Game theGame )
