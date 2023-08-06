@@ -1,6 +1,6 @@
 ﻿namespace Games
 {
-    public class GameBase
+    public abstract class GameBase
     {
         private int theGameNumber;
         private string theName;
