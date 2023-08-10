@@ -7,6 +7,6 @@ namespace Games
         {
         }
 
-        protected override string RessourceFolder => Path.Combine( SolutionDir, "res", "markenlogos" );
+        protected override string RessourceFolder => Path.Combine( SolutionDir, "App", "res", "Markenlogos" );
     }
 }

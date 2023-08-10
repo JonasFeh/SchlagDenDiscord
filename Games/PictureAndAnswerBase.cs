@@ -28,7 +28,7 @@ namespace Games
                 new PictureAndAnswerElement("Gardena", Path.Combine(RessourceFolder, "gardena.png"), 3),
                 new PictureAndAnswerElement("Goodyear", Path.Combine(RessourceFolder, "goodyear.png"), 4),
                 new PictureAndAnswerElement("Gucci", Path.Combine(RessourceFolder, "gucci.png"), 1),
-                new PictureAndAnswerElement("Guinness", Path.Combine(RessourceFolder, "guiness.png"), 2),
+                new PictureAndAnswerElement("Guinness", Path.Combine(RessourceFolder, "guinness.png"), 2),
                 new PictureAndAnswerElement("Hansaplast", Path.Combine(RessourceFolder, "hansaplast.png"), 3),
                 new PictureAndAnswerElement("Harley Davidson", Path.Combine(RessourceFolder, "harley_davidson.png"), 3),
                 new PictureAndAnswerElement("Harry", Path.Combine(RessourceFolder, "harry.png"), 2),

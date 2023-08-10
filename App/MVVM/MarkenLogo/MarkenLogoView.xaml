@@ -58,7 +58,7 @@
 
         </Grid>
 
-        <Image Grid.Row="1" Source="{Binding CurrentElement.Image}" />
+        <Image Name="Image" Grid.Row="1" Source="{Binding Path=CurrentElement.Image}" />
 
         <Border
             Grid.Row="2"

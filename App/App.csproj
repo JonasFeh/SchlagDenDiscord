@@ -9,13 +9,162 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="res\Markenlogos\adobe.png" />
+    <None Remove="res\Markenlogos\airbnb.png" />
+    <None Remove="res\Markenlogos\ariel.png" />
+    <None Remove="res\Markenlogos\atari.png" />
+    <None Remove="res\Markenlogos\bacardi.png" />
+    <None Remove="res\Markenlogos\becks.png" />
+    <None Remove="res\Markenlogos\cadillac.png" />
+    <None Remove="res\Markenlogos\captain_morgan.png" />
+    <None Remove="res\Markenlogos\citroen.png" />
+    <None Remove="res\Markenlogos\deutsche_bank.png" />
+    <None Remove="res\Markenlogos\dr_oetker.png" />
+    <None Remove="res\Markenlogos\eizo.png" />
+    <None Remove="res\Markenlogos\fiat.png" />
+    <None Remove="res\Markenlogos\firefox.png" />
+    <None Remove="res\Markenlogos\fishermans_friend.png" />
+    <None Remove="res\Markenlogos\fosters.png" />
+    <None Remove="res\Markenlogos\frosta.png" />
+    <None Remove="res\Markenlogos\gardena.png" />
+    <None Remove="res\Markenlogos\goodyear.png" />
+    <None Remove="res\Markenlogos\gucci.png" />
+    <None Remove="res\Markenlogos\guinness.png" />
+    <None Remove="res\Markenlogos\hansaplast.png" />
+    <None Remove="res\Markenlogos\harley_davidson.png" />
+    <None Remove="res\Markenlogos\harry.png" />
+    <None Remove="res\Markenlogos\heineken.png" />
+    <None Remove="res\Markenlogos\hermes.png" />
+    <None Remove="res\Markenlogos\hitschies.png" />
+    <None Remove="res\Markenlogos\hornbach.png" />
+    <None Remove="res\Markenlogos\hot_wheels.png" />
+    <None Remove="res\Markenlogos\iglo.png" />
+    <None Remove="res\Markenlogos\intel.png" />
+    <None Remove="res\Markenlogos\jaegermeister.png" />
+    <None Remove="res\Markenlogos\jbl.png" />
+    <None Remove="res\Markenlogos\john_deere.png" />
+    <None Remove="res\Markenlogos\kalashnikov.png" />
+    <None Remove="res\Markenlogos\katjes.png" />
+    <None Remove="res\Markenlogos\kfc.png" />
+    <None Remove="res\Markenlogos\kia.png" />
+    <None Remove="res\Markenlogos\klosterfrau.png" />
+    <None Remove="res\Markenlogos\knorr.png" />
+    <None Remove="res\Markenlogos\kodak.png" />
+    <None Remove="res\Markenlogos\konica_minolta.png" />
+    <None Remove="res\Markenlogos\liqui_moly.png" />
+    <None Remove="res\Markenlogos\logitech.png" />
+    <None Remove="res\Markenlogos\lpkf.png" />
+    <None Remove="res\Markenlogos\lucky_strike.png" />
+    <None Remove="res\Markenlogos\lufthansa.png" />
+    <None Remove="res\Markenlogos\maggi.png" />
+    <None Remove="res\Markenlogos\marlboro.png" />
+    <None Remove="res\Markenlogos\martini.png" />
+    <None Remove="res\Markenlogos\meister_proper.png" />
+    <None Remove="res\Markenlogos\metro_goldwyn_mayer.png" />
+    <None Remove="res\Markenlogos\mueller.png" />
+    <None Remove="res\Markenlogos\neckermann.png" />
+    <None Remove="res\Markenlogos\paramount.png" />
+    <None Remove="res\Markenlogos\pattex.png" />
+    <None Remove="res\Markenlogos\philips.png" />
+    <None Remove="res\Markenlogos\radeberger.png" />
+    <None Remove="res\Markenlogos\reuters.png" />
+    <None Remove="res\Markenlogos\rtl_zwei.png" />
+    <None Remove="res\Markenlogos\saab.png" />
+    <None Remove="res\Markenlogos\sap.png" />
+    <None Remove="res\Markenlogos\schwartau.png" />
+    <None Remove="res\Markenlogos\sinalco.png" />
+    <None Remove="res\Markenlogos\skoda.png" />
+    <None Remove="res\Markenlogos\telegram.png" />
+    <None Remove="res\Markenlogos\tetra_pak.png" />
+    <None Remove="res\Markenlogos\trigema.png" />
+    <None Remove="res\Markenlogos\volvo.png" />
+    <None Remove="res\Markenlogos\wasa.png" />
+    <None Remove="res\Markenlogos\wuerth.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FontAwesome6.Svg" Version="2.5.1" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\Data\Data.csproj" />
     <ProjectReference Include="..\Games\Games.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\Markenlogos\adobe.png" />
+    <Resource Include="res\Markenlogos\airbnb.png" />
+    <Resource Include="res\Markenlogos\ariel.png" />
+    <Resource Include="res\Markenlogos\atari.png" />
+    <Resource Include="res\Markenlogos\bacardi.png" />
+    <Resource Include="res\Markenlogos\becks.png" />
+    <Resource Include="res\Markenlogos\cadillac.png" />
+    <Resource Include="res\Markenlogos\captain_morgan.png" />
+    <Resource Include="res\Markenlogos\citroen.png" />
+    <Resource Include="res\Markenlogos\deutsche_bank.png" />
+    <Resource Include="res\Markenlogos\dr_oetker.png" />
+    <Resource Include="res\Markenlogos\eizo.png" />
+    <Resource Include="res\Markenlogos\fiat.png" />
+    <Resource Include="res\Markenlogos\firefox.png" />
+    <Resource Include="res\Markenlogos\fishermans_friend.png" />
+    <Resource Include="res\Markenlogos\fosters.png" />
+    <Resource Include="res\Markenlogos\frosta.png" />
+    <Resource Include="res\Markenlogos\gardena.png" />
+    <Resource Include="res\Markenlogos\goodyear.png" />
+    <Resource Include="res\Markenlogos\gucci.png" />
+    <Resource Include="res\Markenlogos\guinness.png" />
+    <Resource Include="res\Markenlogos\hansaplast.png" />
+    <Resource Include="res\Markenlogos\harley_davidson.png" />
+    <Resource Include="res\Markenlogos\harry.png" />
+    <Resource Include="res\Markenlogos\heineken.png" />
+    <Resource Include="res\Markenlogos\hermes.png" />
+    <Resource Include="res\Markenlogos\hitschies.png" />
+    <Resource Include="res\Markenlogos\hornbach.png" />
+    <Resource Include="res\Markenlogos\hot_wheels.png" />
+    <Resource Include="res\Markenlogos\iglo.png" />
+    <Resource Include="res\Markenlogos\intel.png" />
+    <Resource Include="res\Markenlogos\jaegermeister.png" />
+    <Resource Include="res\Markenlogos\jbl.png" />
+    <Resource Include="res\Markenlogos\john_deere.png" />
+    <Resource Include="res\Markenlogos\kalashnikov.png" />
+    <Resource Include="res\Markenlogos\katjes.png" />
+    <Resource Include="res\Markenlogos\kfc.png" />
+    <Resource Include="res\Markenlogos\kia.png" />
+    <Resource Include="res\Markenlogos\klosterfrau.png" />
+    <Resource Include="res\Markenlogos\knorr.png" />
+    <Resource Include="res\Markenlogos\kodak.png" />
+    <Resource Include="res\Markenlogos\konica_minolta.png" />
+    <Resource Include="res\Markenlogos\liqui_moly.png" />
+    <Resource Include="res\Markenlogos\logitech.png" />
+    <Resource Include="res\Markenlogos\lpkf.png" />
+    <Resource Include="res\Markenlogos\lucky_strike.png" />
+    <Resource Include="res\Markenlogos\lufthansa.png" />
+    <Resource Include="res\Markenlogos\maggi.png" />
+    <Resource Include="res\Markenlogos\marlboro.png" />
+    <Resource Include="res\Markenlogos\martini.png" />
+    <Resource Include="res\Markenlogos\meister_proper.png" />
+    <Resource Include="res\Markenlogos\metro_goldwyn_mayer.png" />
+    <Resource Include="res\Markenlogos\mueller.png" />
+    <Resource Include="res\Markenlogos\neckermann.png" />
+    <Resource Include="res\Markenlogos\paramount.png" />
+    <Resource Include="res\Markenlogos\pattex.png" />
+    <Resource Include="res\Markenlogos\philips.png" />
+    <Resource Include="res\Markenlogos\radeberger.png" />
+    <Resource Include="res\Markenlogos\reuters.png" />
+    <Resource Include="res\Markenlogos\rtl_zwei.png" />
+    <Resource Include="res\Markenlogos\saab.png" />
+    <Resource Include="res\Markenlogos\sap.png" />
+    <Resource Include="res\Markenlogos\schwartau.png" />
+    <Resource Include="res\Markenlogos\sinalco.png" />
+    <Resource Include="res\Markenlogos\skoda.png" />
+    <Resource Include="res\Markenlogos\telegram.png" />
+    <Resource Include="res\Markenlogos\tetra_pak.png" />
+    <Resource Include="res\Markenlogos\trigema.png" />
+    <Resource Include="res\Markenlogos\volvo.png" />
+    <Resource Include="res\Markenlogos\wasa.png" />
+    <Resource Include="res\Markenlogos\wuerth.png" />
   </ItemGroup>
 
 </Project>

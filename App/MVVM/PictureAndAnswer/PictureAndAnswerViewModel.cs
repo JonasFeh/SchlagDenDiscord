@@ -16,14 +16,14 @@ namespace App.MVVM.PictureAndAnswer
                 throw new ArgumentException( $"Game must be of type {nameof( PictureAndAnswerBase )}" );
 
             _game = aGame;
-
+            _hideAnswer = Visibility.Hidden;
             Elements = new Queue<PictureAndAnswerElement>( aGame.Elements );
             CurrentElement = Elements.Dequeue();
         }
 
         public Queue<PictureAndAnswerElement> Elements { get; private set; }
 
-        private Visibility _hideAnswer = Visibility.Hidden;
+        private Visibility _hideAnswer;
 
         public Visibility HideAnswer
         {
@@ -43,6 +43,7 @@ namespace App.MVVM.PictureAndAnswer
             {
                 HideAnswer = Visibility.Hidden;
                 CurrentElement = Elements.Dequeue();
+                return;
             }
 
             HideAnswer = Visibility.Visible;
@@ -60,6 +61,7 @@ namespace App.MVVM.PictureAndAnswer
                 OnPropertyChanged( nameof( CurrentElement ) );
             }
         }
+
 
         public int GameNumber => _game.GameNumber;
 

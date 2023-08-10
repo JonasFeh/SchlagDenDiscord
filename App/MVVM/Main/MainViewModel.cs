@@ -1,10 +1,8 @@
 ﻿using App.MVVM.MarkenLogo;
-using App.MVVM.PictureAndAnswer;
 using Games;
 using SchlagDenDiscord.Core.Core;
 using SchlagDenDiscord.MVVM.ScoreBoard;
 using SchlagDenDiscord.MVVM.TopBar;
-using System;
 using System.Collections.Generic;
 
 namespace SchlagDenDiscord.MVVM.Main
