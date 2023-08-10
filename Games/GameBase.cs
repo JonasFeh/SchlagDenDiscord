@@ -2,15 +2,12 @@
 {
     public abstract class GameBase
     {
-        private int theGameNumber;
-        private string theName;
-
-        public GameBase(int theGameNumber, string theName, GameType theGameType )
+        public GameBase( int theGameNumber, string theName, GameType theGameType, Game theGame )
         {
             GameNumber = theGameNumber;
             Name = theName;
             GameType = theGameType;
-
+            Game = theGame;
         }
 
         public string Name { get; }
@@ -18,5 +15,7 @@
         public int GameNumber { get; }
 
         public GameType GameType { get; }
+
+        public Game Game { get; }
     }
 }

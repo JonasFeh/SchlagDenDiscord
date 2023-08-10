@@ -29,9 +29,9 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="30" />
-                <RowDefinition Height="75" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
@@ -97,10 +97,10 @@
             <TextBlock
                 Grid.Row="1"
                 Grid.Column="0"
-                Margin="20,0,0,0"
+                Margin="10,0,10,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
-                FontFamily="/Fonts/#Impact"
+                FontFamily="ImpactThin"
                 FontSize="22"
                 Foreground="White"
                 Text="Schlag den Discord" />
@@ -108,8 +108,17 @@
             <RadioButton
                 Grid.Row="2"
                 Height="50"
-                Command="{Binding HomeViewCommand}"
+                Command="{Binding OpenScoreBoard}"
                 Content="Scoreboard"
+                FontSize="14"
+                Foreground="White"
+                IsChecked="True"
+                Style="{StaticResource MenuButtonTheme}" />
+            <RadioButton
+                Grid.Row="3"
+                Height="50"
+                Command="{Binding OpenGame1}"
+                Content="Spiel 1"
                 FontSize="14"
                 Foreground="White"
                 IsChecked="True"

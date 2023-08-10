@@ -1,7 +1,8 @@
 ﻿<Application x:Class="SchlagDenDiscord.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:scoreboard="clr-namespace:SchlagDenDiscord.MVVM.ScoreBoard"
+             xmlns:scoreboard="clr-namespace:SchlagDenDiscord.MVVM.ScoreBoard" 
+             xmlns:markenlogo="clr-namespace:App.MVVM.MarkenLogo"
              StartupUri="MVVM/Main/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
@@ -11,6 +12,9 @@
             </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type scoreboard:ScoreBoardViewModel}">
                 <scoreboard:ScoreBoardView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type markenlogo:MarkenLogoViewModel}">
+                <markenlogo:MarkenLogoView />
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>

@@ -27,5 +27,15 @@
         {
             return GameRegistry[theGame];
         }
+
+        public int GetGameNumber( Game theGame )
+        {
+            return GameRegistry.Values.First( x => x.Game == theGame ).GameNumber;
+        }
+
+        public Game GetGameEnum(int theGameNumber )
+        {
+            return GameRegistry.Values.First( x => x.GameNumber == theGameNumber ).Game;
+        }
     }
 }

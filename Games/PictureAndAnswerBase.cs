@@ -4,7 +4,7 @@ namespace Games
 {
     public abstract class PictureAndAnswerBase : GameBase
     {
-        public PictureAndAnswerBase( int theGameNumber, string theName ) : base( theGameNumber, theName, GameType.PictureAndAnswer )
+        public PictureAndAnswerBase( int theGameNumber, string theName ) : base( theGameNumber, theName, GameType.PictureAndAnswer, Game.Markenlogo )
         {
             Elements = new List<PictureAndAnswerElement>
             {
@@ -83,7 +83,7 @@ namespace Games
             Elements = Shuffle<PictureAndAnswerElement>( Elements );
         }
 
-        List<PictureAndAnswerElement> Elements { get; }
+        public List<PictureAndAnswerElement> Elements { get; }
 
         protected string SolutionDir => Common.VisualStudioProvider.TryGetSolutionDirectoryInfo().FullName;
 
