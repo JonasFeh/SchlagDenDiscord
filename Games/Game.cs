@@ -3,6 +3,6 @@
     public enum Game
     {
         Markenlogo,
-
+        Category,
     }
 }
