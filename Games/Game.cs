@@ -4,5 +4,6 @@
     {
         Markenlogo,
         Category,
+        WhoThat,
     }
 }

@@ -123,7 +123,33 @@
                     "Schlossallee"
                 }
             },
-
+            // Chronologisch
+            new CategoryElement
+            {
+                Name = "Gesetzliche Feiertage",
+                // 18
+                Solutions =
+                {
+                    "Neujahr",
+                    "Heilige drei Könige",
+                    "Karfreitag",
+                    "Ostersonntag",
+                    "Ostermontag",
+                    "Tag der Arbeit",
+                    "Christi Himmelfahrt",
+                    "Pfingstsonntag",
+                    "Pfingstmontag",
+                    "Fronleichnam",
+                    "Augsburger Friedensfest",
+                    "Mariä Himmelfahrt",
+                    "Tag der deutschen Einheit",
+                    "Reformationstag",
+                    "Allerheiligen",
+                    "Buß- und Bettag",
+                    "1. Weihnachtstag",
+                    "2. Weihnachtstag"
+                }
+            },
 
         };
     }

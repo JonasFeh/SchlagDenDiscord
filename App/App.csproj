@@ -80,6 +80,37 @@
     <None Remove="res\Markenlogos\volvo.png" />
     <None Remove="res\Markenlogos\wasa.png" />
     <None Remove="res\Markenlogos\wuerth.png" />
+    <None Remove="res\WerIstDas\ArnoDübel.jpg" />
+    <None Remove="res\WerIstDas\BerndLucke.jpg" />
+    <None Remove="res\WerIstDas\CarstenMaschmeyer.jpg" />
+    <None Remove="res\WerIstDas\CarstenStahl.jpg" />
+    <None Remove="res\WerIstDas\ChrisMartin.jpg" />
+    <None Remove="res\WerIstDas\ChristopherNolan.jpg" />
+    <None Remove="res\WerIstDas\ConstantinSchreiber.jpeg" />
+    <None Remove="res\WerIstDas\DanReynolds.jpg" />
+    <None Remove="res\WerIstDas\DerGraf.jpg" />
+    <None Remove="res\WerIstDas\Faker.jpg" />
+    <None Remove="res\WerIstDas\FrankThelen.jpg" />
+    <None Remove="res\WerIstDas\FraukeLudowig.jpg" />
+    <None Remove="res\WerIstDas\GordonRamsey.jpg" />
+    <None Remove="res\WerIstDas\HansEntertainment.jpg" />
+    <None Remove="res\WerIstDas\HansZimmer.jpg" />
+    <None Remove="res\WerIstDas\HowardStern.jpg" />
+    <None Remove="res\WerIstDas\JosephGoebbels.jpg" />
+    <None Remove="res\WerIstDas\JosVerstappen.jpg" />
+    <None Remove="res\WerIstDas\JudithRakers.jpg" />
+    <None Remove="res\WerIstDas\JulianSommer.jpg" />
+    <None Remove="res\WerIstDas\KonnyReimann.jpg" />
+    <None Remove="res\WerIstDas\LanaRhoades.jpg" />
+    <None Remove="res\WerIstDas\MickSchmuacher.jpg" />
+    <None Remove="res\WerIstDas\PeterKlöppel.jpg" />
+    <None Remove="res\WerIstDas\RezaParastesh.jpg" />
+    <None Remove="res\WerIstDas\SimonCowell.jpg" />
+    <None Remove="res\WerIstDas\Standartskill.jpg" />
+    <None Remove="res\WerIstDas\ThorstenLegat.jpg" />
+    <None Remove="res\WerIstDas\TimotheeChalamet.jpg" />
+    <None Remove="res\WerIstDas\TimWiese.jpg" />
+    <None Remove="res\WerIstDas\WolfgangSchmidt.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -165,6 +196,36 @@
     <Resource Include="res\Markenlogos\volvo.png" />
     <Resource Include="res\Markenlogos\wasa.png" />
     <Resource Include="res\Markenlogos\wuerth.png" />
+    <Resource Include="res\WerIstDas\ArnoDübel.jpg" />
+    <Resource Include="res\WerIstDas\BerndLucke.jpg" />
+    <Resource Include="res\WerIstDas\CarstenMaschmeyer.jpg" />
+    <Resource Include="res\WerIstDas\CarstenStahl.jpg" />
+    <Resource Include="res\WerIstDas\ChrisMartin.jpg" />
+    <Resource Include="res\WerIstDas\ChristopherNolan.jpg" />
+    <Resource Include="res\WerIstDas\ConstantinSchreiber.jpeg" />
+    <Resource Include="res\WerIstDas\DanReynolds.jpg" />
+    <Resource Include="res\WerIstDas\DerGraf.jpg" />
+    <Resource Include="res\WerIstDas\Faker.jpg" />
+    <Resource Include="res\WerIstDas\FrankThelen.jpg" />
+    <Resource Include="res\WerIstDas\FraukeLudowig.jpg" />
+    <Resource Include="res\WerIstDas\GordonRamsey.jpg" />
+    <Resource Include="res\WerIstDas\HansEntertainment.jpg" />
+    <Resource Include="res\WerIstDas\HansZimmer.jpg" />
+    <Resource Include="res\WerIstDas\HowardStern.jpg" />
+    <Resource Include="res\WerIstDas\JosephGoebbels.jpg" />
+    <Resource Include="res\WerIstDas\JosVerstappen.jpg" />
+    <Resource Include="res\WerIstDas\JudithRakers.jpg" />
+    <Resource Include="res\WerIstDas\JulianSommer.jpg" />
+    <Resource Include="res\WerIstDas\KonnyReimann.jpg" />
+    <Resource Include="res\WerIstDas\LanaRhoades.jpg" />
+    <Resource Include="res\WerIstDas\PeterKlöppel.jpg" />
+    <Resource Include="res\WerIstDas\RezaParastesh.jpg" />
+    <Resource Include="res\WerIstDas\SimonCowell.jpg" />
+    <Resource Include="res\WerIstDas\Standartskill.jpg" />
+    <Resource Include="res\WerIstDas\ThorstenLegat.jpg" />
+    <Resource Include="res\WerIstDas\TimotheeChalamet.jpg" />
+    <Resource Include="res\WerIstDas\TimWiese.jpg" />
+    <Resource Include="res\WerIstDas\WolfgangSchmidt.jpg" />
   </ItemGroup>
 
 </Project>

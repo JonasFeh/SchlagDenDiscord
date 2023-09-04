@@ -1,4 +1,5 @@
 ﻿using App.MVVM.MarkenLogo;
+using App.MVVM.WhoThat;
 using Games;
 using SchlagDenDiscord.Core.Core;
 using SchlagDenDiscord.MVVM.ScoreBoard;
@@ -68,6 +69,7 @@ namespace SchlagDenDiscord.MVVM.Main
             return new Dictionary<Game, ViewModelBase>
             {
                 { Game.Markenlogo, new MarkenLogoViewModel() },
+                { Game.WhoThat, new WhoThatViewModel() },
             };
         }
     }

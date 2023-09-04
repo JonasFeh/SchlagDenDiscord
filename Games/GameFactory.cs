@@ -21,6 +21,7 @@
         private Dictionary<Game, GameBase> GameRegistry = new Dictionary<Game, GameBase>
         {
             { Game.Markenlogo, new MarkenlogosGame(1, "Markenlogos") },
+            { Game.WhoThat, new WhoThatGame(11, "Wer ist das?") },
         };
 
         public GameBase GetGame( Game theGame )
@@ -33,7 +34,7 @@
             return GameRegistry.Values.First( x => x.Game == theGame ).GameNumber;
         }
 
-        public Game GetGameEnum(int theGameNumber )
+        public Game GetGameEnum( int theGameNumber )
         {
             return GameRegistry.Values.First( x => x.GameNumber == theGameNumber ).Game;
         }

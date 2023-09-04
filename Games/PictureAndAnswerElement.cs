@@ -2,7 +2,7 @@
 {
     public class PictureAndAnswerElement
     {
-        public PictureAndAnswerElement( string theName, string theImagePath, int theDifficulty )
+        public PictureAndAnswerElement( string theName, string theImagePath, int theDifficulty = 3 )
         {
             Answer = theName;
             Image = theImagePath;
