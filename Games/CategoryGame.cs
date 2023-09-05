@@ -8,6 +8,49 @@
 
         public IList<CategoryElement> Elements { get; private set; } = new List<CategoryElement>
         {
+            // Nach Position laut Kicker
+            new CategoryElement
+            {
+                Name = "Deutsche Startelf des WM Finales 2014",
+                // 11
+                Solutions =
+                {
+                    "Neuer",
+                    "Lahm",
+                    "Boateng",
+                    "Hummels",
+                    "Höwedes",
+                    "Schweinsteiger",
+                    "Kramer",
+                    "Kroos",
+                    "Müller",
+                    "Özil",
+                    "Klose",
+                }
+            },
+            // Nach Einwohnerzahl
+            new CategoryElement
+            {
+                Name = "Deutsche Städte >500.000 Einwohner",
+                // 14
+                Solutions =
+                {
+                    "Berlin",
+                    "Hamburg",
+                    "München",
+                    "Köln",
+                    "Frankfurt am Main",
+                    "Stuttgart",
+                    "Düsseldorf",
+                    "Leipzig",
+                    "Dortmund",
+                    "Essen",
+                    "Bremen",
+                    "Dresden",
+                    "Hannover",
+                    "Nürnberg",
+                }
+            },
             // Reihenfolge der Abarbeitung
             new CategoryElement
             {
@@ -112,7 +155,7 @@
                     "Schillerstraße",
                     "Wasserwerk",
                     "Geothestraße",
-                    "Gehen sie in das Gefängnis",
+                    "Gehen Sie in das Gefängnis",
                     "Rathausplatz",
                     "Hauptstraße",
                     "Hauptstraße",
@@ -150,7 +193,72 @@
                     "2. Weihnachtstag"
                 }
             },
-
+            // Zufall
+            new CategoryElement
+            {
+                Name = "Zweistellige Primzahlen",
+                // 21
+                Solutions =
+                {
+                    "89",
+                    "23",
+                    "47",
+                    "13",
+                    "79",
+                    "61",
+                    "17",
+                    "43",
+                    "83",
+                    "11",
+                    "37",
+                    "67",
+                    "71",
+                    "53",
+                    "19",
+                    "31",
+                    "73",
+                    "29",
+                    "97",
+                    "41",
+                    "59",
+                }
+            },
+            // Alphabetisch
+            new CategoryElement
+            {
+                Name = "EU Mitgliedsstaaten",
+                // 27
+                Solutions =
+                {
+                    "Belgien",
+                    "Bulgarien",
+                    "Dänemark",
+                    "Deutschland",
+                    "Estland",
+                    "Finnland",
+                    "Frankreich",
+                    "Griechenland",
+                    "Irland",
+                    "Italien",
+                    "Kroatien",
+                    "Lettland",
+                    "Litauen",
+                    "Luxemburg",
+                    "Malta",
+                    "Niederlande",
+                    "Österreich",
+                    "Polen",
+                    "Portugal",
+                    "Rumänien",
+                    "Schweden",
+                    "Slowakei",
+                    "Slowenien",
+                    "Spanien",
+                    "Tschechische Republik",
+                    "Ungarn",
+                    "Zypern",
+                }
+            },
         };
     }
 }

@@ -5,12 +5,12 @@ x Gewicht
 x Songs rückwärts
 x Arschbombe
 x Schmecken
-x Kategorie
+  Kategorie
 x Markenlogos
 x Google
 x Wer ist das
 x Die Münze https://www.youtube.com/watch?v=SozL1n2bUlA
-x Wer lügt?
+  Wer lügt?
 x Knobeln https://www.youtube.com/watch?v=__FRJcDnSj8
 x Verstecken
 x Duell um die Geld

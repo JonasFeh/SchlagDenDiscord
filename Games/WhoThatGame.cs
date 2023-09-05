@@ -7,6 +7,7 @@
             Elements = new List<PictureAndAnswerElement>
             {
                 new PictureAndAnswerElement("Arno Dübel", Path.Combine( RessourceFolder, "ArnoDübel.jpg") ),
+                new PictureAndAnswerElement("Belit Onay", Path.Combine( RessourceFolder, "BelitOnay.jpg") ),
                 new PictureAndAnswerElement("Bernd Lucke", Path.Combine( RessourceFolder, "BerndLucke.jpg") ),
                 new PictureAndAnswerElement("Carsten Maschmeyer", Path.Combine( RessourceFolder, "CarstenMaschmeyer.jpg") ),
                 new PictureAndAnswerElement("Carsten Stahl", Path.Combine( RessourceFolder, "CarstenStahl.jpg") ),

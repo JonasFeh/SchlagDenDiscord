@@ -81,6 +81,7 @@
     <None Remove="res\Markenlogos\wasa.png" />
     <None Remove="res\Markenlogos\wuerth.png" />
     <None Remove="res\WerIstDas\ArnoDübel.jpg" />
+    <None Remove="res\WerIstDas\BelitOnay.jpg" />
     <None Remove="res\WerIstDas\BerndLucke.jpg" />
     <None Remove="res\WerIstDas\CarstenMaschmeyer.jpg" />
     <None Remove="res\WerIstDas\CarstenStahl.jpg" />
@@ -197,6 +198,7 @@
     <Resource Include="res\Markenlogos\wasa.png" />
     <Resource Include="res\Markenlogos\wuerth.png" />
     <Resource Include="res\WerIstDas\ArnoDübel.jpg" />
+    <Resource Include="res\WerIstDas\BelitOnay.jpg" />
     <Resource Include="res\WerIstDas\BerndLucke.jpg" />
     <Resource Include="res\WerIstDas\CarstenMaschmeyer.jpg" />
     <Resource Include="res\WerIstDas\CarstenStahl.jpg" />
