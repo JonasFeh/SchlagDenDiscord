@@ -259,6 +259,87 @@
                     "Zypern",
                 }
             },
+            // Zufall
+            new CategoryElement
+            {
+                Name="Nachbarländer von Ungarn",
+                // 7
+                Solutions =
+                {
+                    "Österreich",
+                    "Rumänien",
+                    "Ukraine",
+                    "Slowakei",
+                    "Serbien",
+                    "Slowenien",
+                    "Kroatien"
+                }
+            },
+            // Chronologisch
+            new CategoryElement
+            {
+                Name="Bundeskanzler seit 1949",
+                Solutions =
+                {
+                    "Konrad Adenauer",
+                    "Ludwig Erhard",
+                    "Kurt Georg Kiesinger",
+                    "Willy Brandt",
+                    "Helmut Schmidt",
+                    "Helmut Kohl",
+                    "Gerhard Schröder",
+                    "Angela Merkel",
+                    "Olaf Scholz"
+                }
+            },
+            // Nach Indexgewichtung
+            new CategoryElement
+            {
+                Name="Unternehmen des Dax",
+                Solutions =
+                {
+                    "SAP",
+                    "Siemens",
+                    "Allianz",
+                    "Airbus",
+                    "Telekom",
+                    "Mercedes Benz",
+                    "Bayer",
+                    "Infineon",
+                    "Münchener Rück",
+                    "BASF",
+                    "Deutsche Post",
+                    "BMW",
+                    "Deutsche Börse",
+                    "Adidas",
+                    "Volkswagen",
+                    "RWE",
+                    "E.ON",
+                    "Merck",
+                    "Deutsche Bank",
+                    "Daimler Truck",
+                    "Siemens Healthineers",
+                    "Vonovia",
+                    "Porsche AG",
+                    "Henkel",
+                    "MTU Aero Engines",
+                    "Symrise",
+                    "Beiersdorf",
+                    "Hannover Rück",
+                    "Brenntag",
+                    "Rheinmetall",
+                    "Commerzbank",
+                    "Fresenius",
+                    "Siemens Energy",
+                    "Heidelberg Materials",
+                    "Qiagen",
+                    "Porsche SE",
+                    "Sartorius",
+                    "Continental",
+                    "Covestro",
+                    "Zalando",
+                },
+            }
         };
     }
 }
