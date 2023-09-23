@@ -13,7 +13,7 @@
             {
                 Name = "Deutsche Startelf des WM Finales 2014",
                 // 11
-                Solutions =
+                Solutions = new List<string>
                 {
                     "Neuer",
                     "Lahm",
@@ -33,7 +33,7 @@
             {
                 Name = "Deutsche Städte >500.000 Einwohner",
                 // 14
-                Solutions =
+                Solutions = new List<string>
                 {
                     "Berlin",
                     "Hamburg",
@@ -56,7 +56,7 @@
             {
                 Name = "Zehnkampf Disziplinen",
                 // 10
-                Solutions =
+                Solutions = new List<string>
                 {
                     "100m",
                     "Weitsprung",
@@ -75,7 +75,7 @@
             {
                 Name = "Aktuelle Bundesregierung",
                 // 17
-                Solutions =
+                Solutions = new List<string>
                 {
                     "Olaf Scholz (Bundeskanzler)",
                     "Robert Habeck (Wirtschaft und Klimaschutz)",
@@ -101,7 +101,7 @@
             {
                 Name = "Staaten der Sowjetunion",
                 // 15
-                Solutions =
+                Solutions = new List<string>
                 {
                     "Armenien",
                     "Aserbaidschan",
@@ -125,7 +125,7 @@
             {
                 Name = "Monopolyfelder",
                 // 37
-                Solutions =
+                Solutions = new List<string>
                 {
                     "Los",
                     "Badstraße",
@@ -171,7 +171,7 @@
             {
                 Name = "Gesetzliche Feiertage",
                 // 18
-                Solutions =
+                Solutions = new List<string>
                 {
                     "Neujahr",
                     "Heilige drei Könige",
@@ -198,7 +198,7 @@
             {
                 Name = "Zweistellige Primzahlen",
                 // 21
-                Solutions =
+                Solutions = new List<string>
                 {
                     "89",
                     "23",
@@ -228,7 +228,7 @@
             {
                 Name = "EU Mitgliedsstaaten",
                 // 27
-                Solutions =
+                Solutions = new List<string>
                 {
                     "Belgien",
                     "Bulgarien",
@@ -264,7 +264,7 @@
             {
                 Name="Nachbarländer von Ungarn",
                 // 7
-                Solutions =
+                Solutions = new List<string>
                 {
                     "Österreich",
                     "Rumänien",
@@ -279,7 +279,7 @@
             new CategoryElement
             {
                 Name="Bundeskanzler seit 1949",
-                Solutions =
+                Solutions = new List<string>
                 {
                     "Konrad Adenauer",
                     "Ludwig Erhard",
@@ -296,7 +296,7 @@
             new CategoryElement
             {
                 Name="Unternehmen des Dax",
-                Solutions =
+                Solutions = new List<string>
                 {
                     "SAP",
                     "Siemens",

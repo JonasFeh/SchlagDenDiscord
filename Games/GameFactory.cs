@@ -22,6 +22,7 @@
         {
             { Game.Markenlogo, new MarkenlogosGame(1, "Markenlogos") },
             { Game.WhoThat, new WhoThatGame(11, "Wer ist das?") },
+            { Game.Category, new CategoryGame(8, "Kategorie") },
         };
 
         public GameBase GetGame( Game theGame )
