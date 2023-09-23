@@ -1,6 +1,6 @@
 ﻿namespace Games
 {
-    internal class CategoryGame : GameBase
+    public class CategoryGame : GameBase
     {
         public CategoryGame( int theGameNumber, string theName ) : base( theGameNumber, theName, GameType.Category, Game.Category )
         {
@@ -339,7 +339,7 @@
                     "Covestro",
                     "Zalando",
                 },
-            }
+            },
         };
     }
 }
