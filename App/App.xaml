@@ -19,8 +19,8 @@
             <DataTemplate DataType="{x:Type whothat:WhoThatViewModel}">
                 <whothat:WhoThatView />
             </DataTemplate>
-            <DataTemplate DataType="{x:Type category:CategoryViewModel}">
-                <category:CategoryView />
+            <DataTemplate DataType="{x:Type category:CategoryGameViewModel}">
+                <category:CategoryGameView />
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>

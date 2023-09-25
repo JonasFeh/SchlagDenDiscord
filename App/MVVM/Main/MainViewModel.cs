@@ -71,7 +71,7 @@ namespace SchlagDenDiscord.MVVM.Main
             {
                 { Game.Markenlogo, new MarkenLogoViewModel() },
                 { Game.WhoThat, new WhoThatViewModel() },
-                { Game.Category, new CategoryViewModel() },
+                { Game.Category, new CategoryGameViewModel((CategoryGame)GameFactory.Instance.GetGame(Game.Category)) },
             };
         }
     }
