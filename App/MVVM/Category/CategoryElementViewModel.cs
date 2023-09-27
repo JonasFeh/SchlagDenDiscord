@@ -1,6 +1,8 @@
 ﻿using Games;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Windows.Controls;
+using System.Windows;
 
 namespace App.MVVM.Category
 {
@@ -38,6 +40,19 @@ namespace App.MVVM.Category
                     m_Solutions = value;
                     OnPropertyChanged( nameof( Solutions ) );
                 }
+            }
+        }
+
+        public void OnStringButtonClick( object sender, RoutedEventArgs e )
+        {
+            var aClickedButton = (Button)sender;
+            if ( aClickedButton.Visibility == Visibility.Hidden )
+            {
+                aClickedButton.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                aClickedButton.Visibility = Visibility.Hidden;
             }
         }
 
