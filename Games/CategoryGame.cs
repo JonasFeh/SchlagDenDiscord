@@ -77,23 +77,23 @@
                 // 17
                 Solutions = new List<string>
                 {
-                    "Olaf Scholz (Bundeskanzler)",
-                    "Robert Habeck (Wirtschaft und Klimaschutz)",
-                    "Christian Lindner (Finanzen)",
-                    "Nancy Faeser (Inneres und Heimat)",
-                    "Annalena Baerbock (Außenministerium)",
-                    "Marco Buschmann (Justiz)",
-                    "Hubertus Heil (Arbeit und Soziales)",
-                    "Boris Pistorius (Verteidigung)",
-                    "Cem Özdemir (Ernährung und Landwirtschaft)",
-                    "Lisa Paus (Familie, Senioren, Frauen, Jugend)",
-                    "Karl Lauterbach (Gesundheit)",
-                    "Volker Wissing (Verkehr)",
-                    "Steffi Lemke \n(Umwelt, Naturschutz, nukl. Sicherheit und Verbraucherschutz",
-                    "Bettina Stark-Watzinger (Bildung und Foschung)",
-                    "Svenja Schulze (Entwicklung)",
-                    "Klara Geywitz (Wohnen, Stadtentwicklung und Bauwesen)",
-                    "Wolfgang Schmidt (Kanzleramtschef)"
+                    "Olaf Scholz\n(Bundeskanzler)\n",
+                    "Robert Habeck\n(Wirtschaft und Klimaschutz)\n",
+                    "Christian Lindner\n(Finanzen)\n",
+                    "Nancy Faeser\n(Inneres und Heimat)\n",
+                    "Annalena Baerbock\n(Außenministerium)\n",
+                    "Marco Buschmann\n(Justiz)\n",
+                    "Hubertus Heil\n(Arbeit und Soziales)\n",
+                    "Boris Pistorius\n(Verteidigung)\n",
+                    "Cem Özdemir\n(Ernährung\nund Landwirtschaft)",
+                    "Lisa Paus\n(Familie, Senioren,\nFrauen, Jugend)",
+                    "Karl Lauterbach\n(Gesundheit)\n",
+                    "Volker Wissing\n(Verkehr)\n",
+                    "Steffi Lemke\n(Umwelt, Naturschutz, nukl.\nSich. u. Verbr.-sch.",
+                    "Bettina Stark-Watzinger\n(Bildung und Foschung)\n",
+                    "Svenja Schulze\n(Entwicklung)\n",
+                    "Klara Geywitz\n(Wohnen, Stadtentwicklung\nund Bauwesen)",
+                    "Wolfgang Schmidt\n(Kanzleramtschef)\n"
                 }
             },
             // Alphabetisch

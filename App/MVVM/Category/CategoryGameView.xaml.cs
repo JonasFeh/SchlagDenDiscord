@@ -11,14 +11,27 @@ namespace App.MVVM.Category
     public partial class CategoryGameView : UserControl
     {
         public CategoryElementViewModel CurrentRound { get; set; }
-        private int m_CurrentIndex = 0;
+        private int m_CurrentIndex;
         private IList<CategoryElement> AllRounds => ( (CategoryGame)GameFactory.Instance.GetGame( Game.Category ) ).Elements;
 
         public CategoryGameView()
         {
             InitializeComponent();
 
+            m_CurrentIndex = 0;
+
             CurrentRound = new CategoryElementViewModel( AllRounds[m_CurrentIndex] );
+            this.DataContext = CurrentRound;
+        }
+
+        public void OnNextButtonClick( object sender, RoutedEventArgs e )
+        {
+            m_CurrentIndex++;
+            if( m_CurrentIndex >= AllRounds.Count )
+            {
+                return;
+            }
+            CurrentRound = CurrentRound = new CategoryElementViewModel( AllRounds[m_CurrentIndex] );
             this.DataContext = CurrentRound;
         }
 
