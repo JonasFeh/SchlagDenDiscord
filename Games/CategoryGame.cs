@@ -8,6 +8,29 @@
 
         public IList<CategoryElement> Elements { get; private set; } = new List<CategoryElement>
         {
+            new CategoryElement
+            {
+                Name="Top 15 meistgenutzten custom Emotes auf dem Discord in Reaktionen seit Beginn",
+                Solutions = new List<string>
+                {
+                    "Yep",
+                    "pepeLaugh",
+                    "yepge",
+                    "sadge",
+                    "pagman",
+                    "LULW",
+                    "LULE",
+                    "wokege",
+                    "monkaLaugh",
+                    "BASED",
+                    "pausechamp",
+                    "Weirdge",
+                    "jow",
+                    "sillychamp",
+                    "jonasF",
+                }
+            },
+
             // Nach Position laut Kicker
             new CategoryElement
             {

@@ -245,33 +245,6 @@
                 IsChecked="True"
                 Style="{StaticResource MenuButtonTheme}" />
                 <RadioButton
-                Grid.Row="14"
-                Height="50"
-                Command="{Binding OpenGameEmpty}"
-                Content="Spiel 13"
-                FontSize="14"
-                Foreground="White"
-                IsChecked="True"
-                Style="{StaticResource MenuButtonTheme}" />
-                <RadioButton
-                Grid.Row="15"
-                Height="50"
-                Command="{Binding OpenGameEmpty}"
-                Content="Spiel 14"
-                FontSize="14"
-                Foreground="White"
-                IsChecked="True"
-                Style="{StaticResource MenuButtonTheme}" />
-                <RadioButton
-                Grid.Row="16"
-                Height="50"
-                Command="{Binding OpenGameEmpty}"
-                Content="Spiel 15"
-                FontSize="14"
-                Foreground="White"
-                IsChecked="True"
-                Style="{StaticResource MenuButtonTheme}" />
-                <RadioButton
                 Grid.Row="17"
                 Height="50"
                 Command="{Binding OpenGameEmpty}"

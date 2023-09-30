@@ -52,10 +52,6 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
                     openPoints += i;
                 }
             }
-            if ( theTeam.JokerMap[Common.Joker.Double] )
-            {
-                openPoints += 15;
-            }
 
             return openPoints;
         }
