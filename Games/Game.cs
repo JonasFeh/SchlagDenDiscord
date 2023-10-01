@@ -5,5 +5,7 @@
         Markenlogo,
         Category,
         WhoThat,
+        Poker,
+        Google,
     }
 }

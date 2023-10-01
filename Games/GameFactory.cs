@@ -20,9 +20,11 @@
 
         private Dictionary<Game, GameBase> GameRegistry = new Dictionary<Game, GameBase>
         {
-            { Game.Markenlogo, new MarkenlogosGame(1, "Markenlogos") },
-            { Game.WhoThat, new WhoThatGame(11, "Wer ist das?") },
-            { Game.Category, new CategoryGame(8, "Kategorie") },
+            { Game.Google, new CategoryGame(2, "Google") },
+            { Game.Category, new CategoryGame(7, "Kategorie") },
+            { Game.Markenlogo, new MarkenlogosGame(9, "Markenlogos") },
+            { Game.WhoThat, new WhoThatGame(10, "Wer ist das?") },
+            { Game.Poker, new PokerGame(12, "PokerGame") },
         };
 
         public GameBase GetGame( Game theGame )

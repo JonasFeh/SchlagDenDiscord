@@ -1,5 +1,6 @@
 ﻿using App.MVVM.Category;
 using App.MVVM.MarkenLogo;
+using App.MVVM.Poker;
 using App.MVVM.WhoThat;
 using Games;
 using SchlagDenDiscord.Core.Core;
@@ -72,6 +73,7 @@ namespace SchlagDenDiscord.MVVM.Main
                 { Game.Markenlogo, new MarkenLogoViewModel() },
                 { Game.WhoThat, new WhoThatViewModel() },
                 { Game.Category, new CategoryGameViewModel((CategoryGame)GameFactory.Instance.GetGame(Game.Category)) },
+                { Game.Poker, new PokerViewModel((PokerGame)GameFactory.Instance.GetGame(Game.Poker)) },
             };
         }
     }

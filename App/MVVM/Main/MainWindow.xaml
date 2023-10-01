@@ -139,7 +139,7 @@
                 <RadioButton
                 Grid.Row="1"
                 Height="50"
-                Command="{Binding OpenGame1}"
+                Command="{Binding OpenGameEmpty}"
                 Content="Spiel 1"
                 FontSize="14"
                 Foreground="White"
@@ -148,7 +148,7 @@
                 <RadioButton
                 Grid.Row="2"
                 Height="50"
-                Command="{Binding OpenGameEmpty}"
+                Command="{Binding OpenGame2}"
                 Content="Spiel 2"
                 FontSize="14"
                 Foreground="White"
@@ -157,7 +157,7 @@
                 <RadioButton
                 Grid.Row="4"
                 Height="50"
-                Command="{Binding OpenGame2}"
+                Command="{Binding OpenGameEmpty}"
                 Content="Spiel 3"
                 FontSize="14"
                 Foreground="White"
@@ -193,7 +193,7 @@
                 <RadioButton
                 Grid.Row="8"
                 Height="50"
-                Command="{Binding OpenGameEmpty}"
+                Command="{Binding OpenGame7}"
                 Content="Spiel 7"
                 FontSize="14"
                 Foreground="White"
@@ -202,7 +202,7 @@
                 <RadioButton
                 Grid.Row="9"
                 Height="50"
-                Command="{Binding OpenGame8}"
+                Command="{Binding OpenGameEmpty}"
                 Content="Spiel 8"
                 FontSize="14"
                 Foreground="White"
@@ -211,7 +211,7 @@
                 <RadioButton
                 Grid.Row="10"
                 Height="50"
-                Command="{Binding OpenGameEmpty}"
+                Command="{Binding OpenGame9}"
                 Content="Spiel 9"
                 FontSize="14"
                 Foreground="White"
@@ -220,7 +220,7 @@
                 <RadioButton
                 Grid.Row="11"
                 Height="50"
-                Command="{Binding OpenGameEmpty}"
+                Command="{Binding OpenGame10}"
                 Content="Spiel 10"
                 FontSize="14"
                 Foreground="White"
@@ -229,7 +229,7 @@
                 <RadioButton
                 Grid.Row="12"
                 Height="50"
-                Command="{Binding OpenGame11}"
+                Command="{Binding OpenGameEmpty}"
                 Content="Spiel 11"
                 FontSize="14"
                 Foreground="White"
@@ -238,7 +238,7 @@
                 <RadioButton
                 Grid.Row="13"
                 Height="50"
-                Command="{Binding OpenGameEmpty}"
+                Command="{Binding OpenGame12}"
                 Content="Spiel 12"
                 FontSize="14"
                 Foreground="White"
@@ -247,7 +247,7 @@
                 <RadioButton
                 Grid.Row="17"
                 Height="50"
-                Command="{Binding OpenGameEmpty}"
+                Command="{Binding OpenGame13}"
                 Content="Stechen"
                 FontSize="14"
                 Foreground="White"

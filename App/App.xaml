@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:scoreboard="clr-namespace:SchlagDenDiscord.MVVM.ScoreBoard" 
-             xmlns:markenlogo="clr-namespace:App.MVVM.MarkenLogo" xmlns:whothat="clr-namespace:App.MVVM.WhoThat" xmlns:category="clr-namespace:App.MVVM.Category"
+             xmlns:markenlogo="clr-namespace:App.MVVM.MarkenLogo" xmlns:whothat="clr-namespace:App.MVVM.WhoThat" xmlns:category="clr-namespace:App.MVVM.Category" xmlns:poker="clr-namespace:App.MVVM.Poker"
              StartupUri="MVVM/Main/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
@@ -21,6 +21,9 @@
             </DataTemplate>
             <DataTemplate DataType="{x:Type category:CategoryGameViewModel}">
                 <category:CategoryGameView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type poker:PokerViewModel}">
+                <poker:PokerView />
             </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
