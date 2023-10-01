@@ -34,5 +34,21 @@
         public Team Team1 { get; set; } = new Team( 1 );
         public Team Team2 { get; set; } = new Team( 2 );
         public Team Team3 { get; set; } = new Team( 3 );
+
+        public Dictionary<int, bool> GamesNotPlayed = new Dictionary<int, bool>
+        {
+            { 1, true },
+            { 2, true },
+            { 3, true },
+            { 4, true },
+            { 5, true },
+            { 6, true },
+            { 7, true },
+            { 8, true },
+            { 9, true },
+            { 10, true },
+            { 11, true },
+            { 12, true },
+        };
     }
 }

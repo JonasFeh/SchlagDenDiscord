@@ -8,29 +8,6 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
 {
     class ScoreBoardViewModel : ViewModelBase<ScoreBoardModel>
     {
-        public ScoreBoardViewModel()
-        {
-            ScoreMap = new List<bool>( 16 )
-        {
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-            true,
-        };
-        }
 
         private int GetMaximumPossiblePoints( Common.Team theTeam )
         {
@@ -45,7 +22,7 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
         private int GetOpenPoints( Data.Team theTeam )
         {
             var openPoints = 0;
-            for ( var i = 1; i < ScoreMap.Count - 1; i++ )
+            for ( var i = 1; i <= ScoreMap.Count; i++ )
             {
                 if ( ScoreMap[i] )
                 {
@@ -71,7 +48,7 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
 
             var yourMaximumPoints = GetMaximumPossiblePoints( theTeam );
 
-            return Math.Min( yourMaximumPoints, maximumPointAnyEnemyCanScore );
+            return Math.Min( yourMaximumPoints, maximumPointAnyEnemyCanScore + 1 );
         }
 
         public int Team1MaximumPossiblePoints => GetMaximumPossiblePoints( Common.Team.Team1 );
@@ -79,7 +56,7 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
         public int Team3MaximumPossiblePoints => GetMaximumPossiblePoints( Common.Team.Team3 );
 
 
-        public List<bool> ScoreMap { get; set; }
+        public IDictionary<int, bool> ScoreMap => ProcessImage.Instance.GamesNotPlayed;
 
         #region TopBarCommands
 
@@ -121,10 +98,6 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
         public RelayCommand Team1Scored14 => new RelayCommand( Scored( Common.Team.Team1, 14 ), IsUnscored( 14 ) );
         public RelayCommand Team1Scored15 => new RelayCommand( Scored( Common.Team.Team1, 15 ), IsUnscored( 15 ) );
 
-        public RelayCommand Team1Joker2x => new RelayCommand( UseJoker( Common.Team.Team1, Common.Joker.Double ), IsJokerUsed( Common.Team.Team1, Common.Joker.Double ) );
-        public RelayCommand Team1JokerFuckOff => new RelayCommand( UseJoker( Common.Team.Team1, Common.Joker.FuckOff ), IsJokerUsed( Common.Team.Team1, Common.Joker.FuckOff ) );
-        public RelayCommand Team1JokerReRoll => new RelayCommand( UseJoker( Common.Team.Team1, Common.Joker.ReRoll ), IsJokerUsed( Common.Team.Team1, Common.Joker.ReRoll ) );
-
         #endregion
 
         #region Team2
@@ -146,10 +119,6 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
         public RelayCommand Team2Scored13 => new RelayCommand( Scored( Common.Team.Team2, 13 ), IsUnscored( 13 ) );
         public RelayCommand Team2Scored14 => new RelayCommand( Scored( Common.Team.Team2, 14 ), IsUnscored( 14 ) );
         public RelayCommand Team2Scored15 => new RelayCommand( Scored( Common.Team.Team2, 15 ), IsUnscored( 15 ) );
-
-        public RelayCommand Team2Joker2x => new RelayCommand( UseJoker( Common.Team.Team2, Common.Joker.Double ), IsJokerUsed( Common.Team.Team2, Common.Joker.Double ) );
-        public RelayCommand Team2JokerFuckOff => new RelayCommand( UseJoker( Common.Team.Team2, Common.Joker.FuckOff ), IsJokerUsed( Common.Team.Team2, Common.Joker.FuckOff ) );
-        public RelayCommand Team2JokerReRoll => new RelayCommand( UseJoker( Common.Team.Team2, Common.Joker.ReRoll ), IsJokerUsed( Common.Team.Team2, Common.Joker.ReRoll ) );
 
         #endregion
 
@@ -173,10 +142,6 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
         public RelayCommand Team3Scored14 => new RelayCommand( Scored( Common.Team.Team3, 14 ), IsUnscored( 14 ) );
         public RelayCommand Team3Scored15 => new RelayCommand( Scored( Common.Team.Team3, 15 ), IsUnscored( 15 ) );
 
-        public RelayCommand Team3Joker2x => new RelayCommand( UseJoker( Common.Team.Team3, Common.Joker.Double ), IsJokerUsed( Common.Team.Team3, Common.Joker.Double ) );
-        public RelayCommand Team3JokerFuckOff => new RelayCommand( UseJoker( Common.Team.Team3, Common.Joker.FuckOff ), IsJokerUsed( Common.Team.Team3, Common.Joker.FuckOff ) );
-        public RelayCommand Team3JokerReRoll => new RelayCommand( UseJoker( Common.Team.Team3, Common.Joker.ReRoll ), IsJokerUsed( Common.Team.Team3, Common.Joker.ReRoll ) );
-
         #endregion
 
         private Func<object, bool> IsUnscored( int theGameNumber )
@@ -194,20 +159,6 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
                 NotifyButtonsCanExecuteChanged();
                 NotifyPoint2WinChanged();
             };
-        }
-
-        private Action<object> UseJoker( Common.Team theTeam, Joker theJoker )
-        {
-            return _ =>
-            {
-                ProcessImage.Instance.GetTeamByEnum( theTeam ).JokerMap[theJoker] = false;
-                NotifyPoint2WinChanged();
-            };
-        }
-
-        private Func<object, bool> IsJokerUsed( Common.Team theTeam, Joker theJoker )
-        {
-            return _ => ProcessImage.Instance.GetTeamByEnum( theTeam ).JokerMap[theJoker];
         }
 
         private void NotifyTeamsChanged()
@@ -271,21 +222,8 @@ namespace SchlagDenDiscord.MVVM.ScoreBoard
         private void NotifyPoint2WinChanged()
         {
             OnPropertyChanged( nameof( Team1Points2Win ) );
+            OnPropertyChanged( nameof( Team2Points2Win ) );
             OnPropertyChanged( nameof( Team3Points2Win ) );
-            OnPropertyChanged( nameof( Team3Points2Win ) );
-        }
-
-        private void NotifyJokersChanged()
-        {
-            OnPropertyChanged( nameof( Team1Joker2x.CanExecute ) );
-            OnPropertyChanged( nameof( Team1JokerFuckOff.CanExecute ) );
-            OnPropertyChanged( nameof( Team1JokerReRoll.CanExecute ) );
-            OnPropertyChanged( nameof( Team2Joker2x.CanExecute ) );
-            OnPropertyChanged( nameof( Team2JokerFuckOff.CanExecute ) );
-            OnPropertyChanged( nameof( Team2JokerReRoll.CanExecute ) );
-            OnPropertyChanged( nameof( Team3Joker2x.CanExecute ) );
-            OnPropertyChanged( nameof( Team3JokerFuckOff.CanExecute ) );
-            OnPropertyChanged( nameof( Team3JokerReRoll.CanExecute ) );
         }
     }
 }
